@@ -1,0 +1,140 @@
+.home-container{
+    background-color: #13131C
+}
+
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffff;
+}
+
+.dashboard-wrapper{
+    padding: 60px 0;
+
+}
+
+.loading-animation{
+    display: block;
+    text-align: center;
+}
+
+.dashboard-wrapper{
+    width: 100%;
+    max-width: 650px;
+}
+
+/* License Found */
+.dashboard-content img{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    width: 20%;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.dashboard-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.dasboard-buttom{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dasboard-buttom button{
+    padding: 10px;
+    background-color: #26253C;
+    color: #ffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 450px;
+    -webkit-appearance:none;
+    display: block;
+}
+
+.dasboard-buttom button:hover{
+    opacity: 0.8;
+}
+
+/* No License Found*/
+.dashboard-license img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 20%;
+    margin-bottom: 20px;
+}
+.dashboard-license{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-self: center;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-license label{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.dashboard-license input[type='text']{
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    outline: none;
+    
+}
+
+.dashboard-license input[type='submit']{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    background-color: #EB5353;
+    color: #ffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    -webkit-appearance:none;
+}
+
+.dashboard-license input[type='submit']:hover{
+    background-color: #FF6B6B;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .dashboard-wrapper h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+}
