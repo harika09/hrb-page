@@ -63,7 +63,7 @@ function Home() {
     if (checkedUserExist) {
       /*  https://secure-brook-87956.herokuapp.com */
       axios.post(
-        'https://hrb-api.onrender.com/api/auth/bind-key',
+        'https://cautious-dog-gabardine.cyclic.app/api/auth/bind-key',
         {
           key: licenseKey,
         },
@@ -100,7 +100,7 @@ function Home() {
     if (checkedUserExist) {
 
       axios.post(
-        'https://hrb-api.onrender.com/api/auth/reset-license',
+        'https://cautious-dog-gabardine.cyclic.app/api/auth/reset-license',
         {
           ip: res.data.IPv4,
         },
@@ -124,7 +124,7 @@ function Home() {
   useEffect(()=>{
     let componentMounted = true;
     const loadUser = async () => {
-      const userInfo = await axios.get("https://hrb-api.onrender.com/api/auth/profile", header);
+      const userInfo = await axios.get("https://cautious-dog-gabardine.cyclic.app/api/auth/profile", header);
       if (componentMounted) {
         
         setTimeout(()=>{

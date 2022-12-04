@@ -42,7 +42,7 @@ function Register() {
 
   const RegisterBtn = (e) => {
     e.preventDefault();
-    axios.post('https://hrb-api.onrender.com/api/auth/register',{
+    axios.post('https://cautious-dog-gabardine.cyclic.app/api/auth/register',{
       firstName: firstName,
       lastName: lastName,
       userName: userName,
