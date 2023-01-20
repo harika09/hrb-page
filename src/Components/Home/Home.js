@@ -91,18 +91,21 @@ function Home() {
     navigate('/')
   }
  
-
+  
   const resetLicense = async (e)=>{
     e.preventDefault()
     setIsLoading(true)
-    const res= await axios.get('https://geolocation-db.com/json/')
+
+    const res= await axios.get('https://api.ipify.org')
+    
     const checkedUserExist = localStorage.getItem("Token");
     if (checkedUserExist) {
-
+      //console.log(res.data)
       axios.post(
         'https://cautious-dog-gabardine.cyclic.app/api/auth/reset-license',
         {
-          ip: res.data.IPv4,
+          ip: res.data,
+         
         },
         {
           headers: {
