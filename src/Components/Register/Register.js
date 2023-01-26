@@ -42,7 +42,7 @@ function Register() {
 
   const RegisterBtn = (e) => {
     e.preventDefault();
-    axios.post('https://cautious-dog-gabardine.cyclic.app/api/auth/register',{
+    axios.post('https://dark-tam-hen.cyclic.app/api/auth/register',{
       firstName: firstName,
       lastName: lastName,
       userName: userName,

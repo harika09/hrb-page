@@ -63,7 +63,8 @@ function Home() {
     if (checkedUserExist) {
       /*  https://secure-brook-87956.herokuapp.com */
       axios.post(
-        'https://cautious-dog-gabardine.cyclic.app/api/auth/bind-key',
+        'https://dark-tam-hen.cyclic.app/api/auth/bind-key',
+        //https://cautious-dog-gabardine.cyclic.app
         {
           key: licenseKey,
         },
@@ -102,7 +103,8 @@ function Home() {
     if (checkedUserExist) {
       //console.log(res.data)
       axios.post(
-        'https://cautious-dog-gabardine.cyclic.app/api/auth/reset-license',
+        'https://dark-tam-hen.cyclic.app/api/auth/reset-license',
+        //'https://cautious-dog-gabardine.cyclic.app/api/auth/reset-license',
         {
           ip: res.data,
          
@@ -127,7 +129,7 @@ function Home() {
   useEffect(()=>{
     let componentMounted = true;
     const loadUser = async () => {
-      const userInfo = await axios.get("https://cautious-dog-gabardine.cyclic.app/api/auth/profile", header);
+      const userInfo = await axios.get("https://dark-tam-hen.cyclic.app/api/auth/profile", header);
       if (componentMounted) {
         
         setTimeout(()=>{

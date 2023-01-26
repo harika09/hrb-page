@@ -7,8 +7,8 @@ function LicenseKey() {
 
     const insertKey = (e)=>{
         e.preventDefault()
-    
-        axios.post('https://cautious-dog-gabardine.cyclic.app/api/auth/key', {
+        // https://cautious-dog-gabardine.cyclic.app/
+        axios.post('https://dark-tam-hen.cyclic.app/api/auth/key', {
             key: key
         })
 
