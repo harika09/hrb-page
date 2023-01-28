@@ -118,8 +118,15 @@ function Home() {
         if(res.data.error){
           errorMessage(res.data.error)
         }else{
-          console.log(res)
+          //console.log(res)
           successMessage(res.data.message)
+          const loadUser = async () => {
+            const userInfo = await axios.get("https://dark-tam-hen.cyclic.app/api/auth/profile", header);
+            setProfile(userInfo.data.user)
+            setIsLoading(false)
+          };
+          loadUser();
+          
           
         }
       });
@@ -127,23 +134,20 @@ function Home() {
   }
 
   useEffect(()=>{
-    let componentMounted = true;
+    //let componentMounted = true;
     const loadUser = async () => {
       const userInfo = await axios.get("https://dark-tam-hen.cyclic.app/api/auth/profile", header);
-      if (componentMounted) {
-        
-        setTimeout(()=>{
-          setProfile(userInfo.data.user)
-          setIsLoading(false)
-        },2000)
-      }
+      setTimeout(()=>{
+        setProfile(userInfo.data.user)
+        setIsLoading(false)
+      },2000)
     };
     loadUser();
 
-    return () => {
-      componentMounted = false;
-    };
-  }, [profile])
+    // return () => {
+    //   componentMounted = false;
+    // };
+  }, [])
 
 
   useEffect(()=>{
