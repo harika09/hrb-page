@@ -42,7 +42,7 @@ function Register() {
 
   const RegisterBtn = (e) => {
     e.preventDefault();
-    axios.post('https://dark-tam-hen.cyclic.app/api/auth/register',{
+    axios.post('https://backend-d9o6.onrender.com/api/auth/register',{
       firstName: firstName,
       lastName: lastName,
       userName: userName,
