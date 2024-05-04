@@ -63,7 +63,7 @@ function Home() {
     if (checkedUserExist) {
       /*  https://secure-brook-87956.herokuapp.com */
       axios.post(
-        'https://backend-d9o6.onrender.com/api/auth/bind-key'
+        'https://backend-d9o6.onrender.com/api/auth/bind-key',
         //'https://dark-tam-hen.cyclic.app/api/auth/bind-key'
         //https://cautious-dog-gabardine.cyclic.app
         {
@@ -103,7 +103,7 @@ function Home() {
     const checkedUserExist = localStorage.getItem("Token");
     if (checkedUserExist) {
       //console.log(res.data)
-      axios.post('https://backend-d9o6.onrender.com/api/auth/reset-license'
+      axios.post('https://backend-d9o6.onrender.com/api/auth/reset-license',
         //'https://dark-tam-hen.cyclic.app/api/auth/reset-license',
         //'https://cautious-dog-gabardine.cyclic.app/api/auth/reset-license',
         {
