@@ -63,7 +63,7 @@ function Home() {
     if (checkedUserExist) {
       /*  https://secure-brook-87956.herokuapp.com */
       axios.post(
-        'https://backend-d9o6.onrender.com/api/auth/bind-key',
+        'https://backend-d9o6.onrender.com/api/auth/bind-key'
         //'https://dark-tam-hen.cyclic.app/api/auth/bind-key'
         //https://cautious-dog-gabardine.cyclic.app
         {
