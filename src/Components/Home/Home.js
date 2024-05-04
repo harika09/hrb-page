@@ -63,7 +63,8 @@ function Home() {
     if (checkedUserExist) {
       /*  https://secure-brook-87956.herokuapp.com */
       axios.post(
-        'https://dark-tam-hen.cyclic.app/api/auth/bind-key',
+        'https://backend-d9o6.onrender.com/api/auth/bind-key',
+        //'https://dark-tam-hen.cyclic.app/api/auth/bind-key'
         //https://cautious-dog-gabardine.cyclic.app
         {
           key: licenseKey,
@@ -121,7 +122,7 @@ function Home() {
           //console.log(res)
           successMessage(res.data.message)
           const loadUser = async () => {
-            const userInfo = await axios.get("https://dark-tam-hen.cyclic.app/api/auth/profile", header);
+            const userInfo = await axios.get("https://backend-d9o6.onrender.com/api/auth/profile", header);
             setProfile(userInfo.data.user)
             setIsLoading(false)
           };
@@ -136,7 +137,7 @@ function Home() {
   useEffect(()=>{
     //let componentMounted = true;
     const loadUser = async () => {
-      const userInfo = await axios.get("https://dark-tam-hen.cyclic.app/api/auth/profile", header);
+      const userInfo = await axios.get("https://backend-d9o6.onrender.com/api/auth/profile", header);
       setTimeout(()=>{
         setProfile(userInfo.data.user)
         setIsLoading(false)
