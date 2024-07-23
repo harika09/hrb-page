@@ -36,8 +36,8 @@ function Register() {
   }
 
   const getIPAddress = async()=>{
-    const res= await axios.get('https://geolocation-db.com/json/')
-    setIPAddress(res.data.IPv4)
+    const res= await axios.get('https://api.ipify.org/')
+    setIPAddress(res.data)
   }
 
   const RegisterBtn = (e) => {
@@ -86,7 +86,7 @@ function Register() {
                 <input type="email" placeholder='Enter Email' maxLength="70" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
 
                 <label htmlFor="username">Username</label>
-                <input type="text" placeholder='Enter Last Name' maxLength="50" value={userName} onChange={(e)=>{setUsername(e.target.value)}} />
+                <input type="text" placeholder='Enter Username' maxLength="50" value={userName} onChange={(e)=>{setUsername(e.target.value)}} />
 
                 <label htmlFor="firstName">First Name</label>
                 <input type="text" placeholder='Enter First Name' maxLength="50" value={firstName} onChange={(e)=>{setFirstName(e.target.value)}} />
